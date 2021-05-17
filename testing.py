@@ -3,6 +3,7 @@
 
 import math
 import sys , os
+import numpy as np
 
 
 def ejercicio1():
@@ -131,9 +132,61 @@ def forbucles():
         print(i)
 
 def for1():
-
+    total=0
     for i in range(100):
-        i+=i
-        
-    print(i)
-for1()
+        total=total+i
+        print(total)
+    
+def conjuntos():
+    a={1, 2, 3, 4}
+    b={2, 3, 5, 6}
+    c={3, 4, 6, 7}
+
+    #Funciones que unen los dos conjuntos
+    print("UNIONES")
+    print(a|b)
+    print(a|c)
+    print(b|c)
+
+    #Funciones que te dan las intersecciones(los valores que tienen iguales)
+    print("INTERSECCIONES")
+    print(a&b)
+    print(a&c)
+    print(b&c)
+
+    #Funciones que te dan los que tiene el primer parametro distinto del segundo
+    print("VALORES IGUALES DE LOS CONJUNTOS")
+    print(a-b)
+    print(a-c)
+    print(b-c)
+
+    #Funciones de diferencias simetricas
+    print("DIFERENCIAS SIMETRICAS")
+    
+    print(a^b)
+    print(b^c)
+    print(c^a)
+
+
+
+
+def areapx(diametro):
+    apx=(((((diametro/2)**2)*np.pi)*10.5)/480)*1000
+    return round(apx,2)
+
+centimo_1=areapx(16.26)
+centimo_2=areapx(18.75)
+centimo_5=areapx(21.25)
+centimo_10=areapx(19.75)
+centimo_20=areapx(22.25)
+centimo_50=areapx(24.25)
+euro_1=areapx(23.25)
+euro_2=areapx(25.75)
+print(centimo_1)
+print(centimo_2)
+print(centimo_5)
+print(centimo_10)	
+print(centimo_20)
+print(centimo_50)
+print(euro_1)
+print(euro_2)
