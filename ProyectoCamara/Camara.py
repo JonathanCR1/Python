@@ -4,7 +4,7 @@
 import cv2
 
 #carga de la imagen en memoria
-captura=cv2.VideoCapture(0)
+captura=cv2.VideoCapture(1)
 
 if not captura.isOpened():
     print("No se ha encontrado una camara")
