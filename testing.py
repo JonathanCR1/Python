@@ -182,11 +182,14 @@ centimo_20=areapx(22.25)
 centimo_50=areapx(24.25)
 euro_1=areapx(23.25)
 euro_2=areapx(25.75)
-print(centimo_1)
-print(centimo_2)
-print(centimo_5)
-print(centimo_10)	
-print(centimo_20)
-print(centimo_50)
-print(euro_1)
-print(euro_2)
+
+
+def cursopythonmaster():
+    numero=int(input("pon un numero: "))
+    resultado = numero >= 18 
+    if resultado:
+        print("mayor de edad ")
+    else:
+        print("menor de edad")
+cursopythonmaster()
+
